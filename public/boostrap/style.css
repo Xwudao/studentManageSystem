@@ -1,5 +1,19 @@
 body {
     background: url("img/background.png");
 }
-.container {
+
+#bottom {
+    height: 100px;
+    width: 100%;
+    background: #F8F8F8;
+    color: #777;
+}
+#bottom .notice {
+    text-align: center;
+    font-size: 17px;
+}
+.bg-max {
+    padding: 10px;
+    font-size: 17px;
+
 }

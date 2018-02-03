@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index');
+Route::post('/', 'HomeController@query');
+Route::get('/addRecord', 'HomeController@addRecord');
+Route::post('/addRecord', 'HomeController@record');
+Route::get('/statistics', 'HomeController@statistics');
+Route::get('/sort', 'HomeController@sort');
+Route::get('/addStatus', 'HomeController@addStatus');
+Route::post('/addStatus', 'HomeController@addStatus2');
