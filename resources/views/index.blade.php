@@ -6,7 +6,6 @@
     <li class="active"><a href="/"><span class="glyphicon glyphicon-search"></span>学生成绩查询 <span class="sr-only">(current)</span></a></li>
     <li><a href="./addRecord"><span class="glyphicon glyphicon-record"></span>学生成绩录入</a></li>
     <li><a href="./statistics"><span class="glyphicon glyphicon-indent-left"></span>学生成绩统计</a></li>
-    <li><a href="./sort"><span class="glyphicon glyphicon-sort"></span>学生成绩排序</a></li>
     <li><a href="./addStatus"><span class="glyphicon glyphicon-plus"></span>添加学生学籍</a></li>
 @endsection
 
@@ -32,11 +31,14 @@
             <div class="panel panel-warning">
                 <div class="panel-heading">学生成绩查询</div>
                 <div class="panel-body">
+                    @if(session('msg')!=null)
+                        <div class="bg-max bg-success">{{ session('msg') }}</div>
+                    @endif
                     <form action="" method="post">
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <label for="">请输入姓名：</label>
-                            <input type="text" name="name" class="form-control">
+                            <label for="">请输入学号：</label>
+                            <input type="text" name="sid" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">请输入身份证号码：</label>
