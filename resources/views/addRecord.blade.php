@@ -18,7 +18,7 @@
                     @if(session('msg')!=null)
                         <div class="bg-max bg-success">{{ session('msg') }}</div>
                     @endif
-                    <form action="" method="post">
+                    <form action="./recordPost" method="post">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="">学科：</label>

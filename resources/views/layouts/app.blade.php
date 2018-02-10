@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title') - 学生管理系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset("boostrap/style.css") }}">
     <script src="{{ asset("boostrap/js/jquery-3.1.1.min.js") }}"></script>
     <script src="{{ asset("boostrap/js/bootstrap.min.js") }}"></script>
